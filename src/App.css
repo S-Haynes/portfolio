@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Questrial");
+
+* {
+  font-family: "Questrial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
