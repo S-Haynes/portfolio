@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
+import ReactLogo from "../../assets/img/react-logo.svg";
 
 const Skills = props => {
   return (
@@ -30,6 +31,7 @@ const Skills = props => {
           </p>
         </Col>
       </Row>
+      <img src={ReactLogo} alt="reactlogo" className="App-logo" />
     </Container>
   );
 };

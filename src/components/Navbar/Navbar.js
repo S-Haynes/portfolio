@@ -9,7 +9,7 @@ const Navbar = props => {
       style={{
         height: "100%",
         width: "80px",
-        position: "absolute",
+        position: "fixed",
         zIndex: "100",
         backgroundColor: "#181818",
         top: "0",
@@ -54,10 +54,10 @@ const Navbar = props => {
           <i className="fab fa-linkedin-in" />
         </a>
         <a className="mt-4" href="https://www.codepen.io/s-haynes">
-          <i class="fab fa-codepen" />
+          <i className="fab fa-codepen" />
         </a>
         <a className="mt-4 mb-4" href="https://www.github.com/s-haynes">
-          <i class="fab fa-github" />
+          <i className="fab fa-github" />
         </a>
       </div>
     </nav>
