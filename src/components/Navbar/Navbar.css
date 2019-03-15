@@ -1,0 +1,14 @@
+i {
+  color: #777;
+  font-size: 24px;
+  opacity: 0.7;
+}
+a i:hover {
+  color: #08fdd8;
+  opacity: 1;
+}
+
+a i:active {
+  color: #08fdd8;
+  opacity: 1;
+}
