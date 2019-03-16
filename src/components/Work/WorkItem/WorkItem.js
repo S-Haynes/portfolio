@@ -1,24 +1,34 @@
 import React from "react";
 import { Col, Row, CardImg } from "reactstrap";
+import Button from "../../Button/Button";
 
 const WorkItem = props => {
   return (
     <Col className="mt-4" xs="12">
-      <Row style={{ backgroundColor: "#181818", padding: "2rem" }}>
+      <Row
+        style={{ backgroundColor: "rgba(24, 24, 24, 0.5)", padding: "2rem" }}
+      >
         <Col sm="12" md="5">
-          <u>
-            <h6>2018</h6>
-          </u>
-          <h2>Movie Junkie</h2>
-          <h6>React / Express / MongoDB / NodeJS</h6>
-          <p className="mt-4">
-            Full stack MERN application utilizing The Movie Database (TMDB) API.
-            Users are able to authenticate themselves and create movie
-            bucketlists, as well as stream movies on the platform.
+          <h6>
+            {props.year}
+            <hr style={{ background: "#08fdd8", width: "30%" }} />
+          </h6>
+
+          <h1>{props.title}</h1>
+          <h6 style={{ color: "#616161" }}>{props.tech}</h6>
+          <p className="mt-4" style={{ fontSize: "20px" }}>
+            {props.info}
           </p>
-          <a href={props.link}>See it live</a>
+          <a href={props.link}>
+            <Button text="VIEW" />
+          </a>
         </Col>
-        <Col className="d-flex justify-content-end" sm="12" md="7">
+        <Col
+          style={{ height: "100%" }}
+          className="d-flex justify-content-end mt-4"
+          sm="12"
+          md="7"
+        >
           <CardImg
             style={{
               maxWidth: "600px",

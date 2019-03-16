@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Container } from "reactstrap";
 import Home from "./components/Home/Home";
 import Contact from "./components/Contact/Contact";
@@ -18,17 +18,22 @@ class App extends Component {
           style={{
             paddingLeft: "80px",
             width: "100%",
-            height: "100%",
-            backgroundColor: "#222"
+            minHeight: "100%",
+            backgroundColor: "#222",
+            position: "relative",
+            display: "flex",
+            alignItems: "center"
           }}
         >
           <Navbar />
           <div className="App">
-            <Route path="/" exact component={Home} />
-            <Route path="/contact" exact component={Contact} />
-            <Route path="/about" exact component={About} />
-            <Route path="/skills" exact component={Skills} />
-            <Route path="/work" exact component={Work} />
+            <Switch>
+              <Route path="/" exact component={Home} />
+              <Route path="/contact" exact component={Contact} />
+              <Route path="/about" exact component={About} />
+              <Route path="/skills" exact component={Skills} />
+              <Route path="/work" exact component={Work} />
+            </Switch>
           </div>
         </div>
       </Router>
