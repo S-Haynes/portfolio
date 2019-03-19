@@ -22,7 +22,8 @@ class App extends Component {
             backgroundColor: "#222",
             position: "relative",
             display: "flex",
-            alignItems: "center"
+            alignItems: "center",
+            flexDirection: 'column'
           }}
         >
           <Navbar />
