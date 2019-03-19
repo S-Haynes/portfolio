@@ -1,11 +1,23 @@
-import React from "react";
-import { Container, Row, Col, CardImg } from "reactstrap";
+import React, {Component} from "react";
+import { Container, Row, Col, CardImg, Spinner } from "reactstrap";
 import Timeline from "../../assets/img/timeline.png";
 import { Link } from "react-router-dom";
+import Logo from '../../assets/img/logo.png'
+import { ScaleLoader } from 'react-spinners'
 
-const About = props => {
-  return (
-    <Container
+class About extends Component {
+  
+  state = {
+    content: 
+    <div style={{background: "#000", width: '100vw', height: '100vh'}} className="animated slideInLeft d-flex align-items-center justify-content-center flex-column"><CardImg src={Logo} style={{maxWidth:'200px', animation:'changeColor', animationDuration: '5s', background: "#000"}}/><h6 className="mt-4 mb-4">Learning about me? Tread carefully.</h6><ScaleLoader size={20} color="#08fdd8"/></div>
+    
+    
+    
+  }
+
+  componentDidMount(){
+    setTimeout(() => this.setState({
+      content:  <Container
       className="d-flex align-items-center"
       style={{ height: "100%", width: "100%" }}
     >
@@ -47,6 +59,12 @@ const About = props => {
         </Col>
       </Row>
     </Container>
-  );
-};
-export default About;
+    }), 3000) 
+  }
+  render() {
+    return this.state.content
+  }
+  }
+
+
+  export default About;

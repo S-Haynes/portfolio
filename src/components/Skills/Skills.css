@@ -31,3 +31,9 @@ td::before {
     padding-left: 10px !important;
   }
 }
+
+@media (max-width: 770px){
+ .App-logo {
+   display: none;
+ }
+}

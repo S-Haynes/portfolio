@@ -1,14 +1,27 @@
-import React from "react";
-import { Container, Row, Col } from "reactstrap";
+import React, {Component} from "react";
+import { Container, Row, Col, Spinner, CardImg } from "reactstrap";
 import WorkItem from "./WorkItem/WorkItem";
 import WorkImage1 from "../../assets/img/work1.png";
 import WorkImage2 from "../../assets/img/work2.png";
 import WorkImage3 from "../../assets/img/work3.png";
 import WorkImage4 from "../../assets/img/work4.png";
+import Logo from '../../assets/img/logo.png'
+import { ScaleLoader } from 'react-spinners'  
+class Work extends Component {
 
-const Work = props => {
-  return (
-    <div
+  
+  state = {
+    content: 
+    <div style={{background:"#000", width: '100vw', height: '100vh'}} className="animated slideInLeft d-flex align-items-center justify-content-center flex-column"><CardImg src={Logo} style={{maxWidth:'200px', animation:'changeColor', animationDuration: '5s', background: "#000"}}/><h6 className="mt-4 mb-4">The fun stuff lives here.</h6><ScaleLoader size={20} color="#08fdd8"/></div>
+    
+    
+  }
+  componentDidMount(){
+    
+    setTimeout(() => {
+
+      this.setState({
+      content: <div
       style={{
         width: "100%",
         height: "100%"
@@ -70,7 +83,12 @@ const Work = props => {
         </Row>
       </Container>
     </div>
-  );
-};
+    })
+  }, 2900) 
+}
+  render() {
+    return this.state.content
+  }
+  }
 
 export default Work;

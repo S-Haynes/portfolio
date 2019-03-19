@@ -45,6 +45,7 @@ body {
   height: 100% !important;
 }
 
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -53,3 +54,29 @@ body {
     transform: rotate(360deg);
   }
 }
+
+@keyframes changeColor {
+  from {
+    opacity: 0.1;
+    filter: grayscale(100)
+  }
+  to {
+    opacity: 1;
+    filter: grayscale(0)
+  }
+}
+
+@keyframes changeRoute {
+  0% {
+    transform: translateX(-100%)
+  }
+
+ 50% {
+    transform: translateX(0%)
+  }
+
+  100% {
+    transform: translateX(100%)
+  }
+}
+
