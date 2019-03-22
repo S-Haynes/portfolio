@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Spinner, CardImg } from "reactstrap";
 import WorkItem from "./WorkItem/WorkItem";
-import WorkImage1 from "../../assets/img/work1.png";
-import WorkImage2 from "../../assets/img/work2.png";
-import WorkImage3 from "../../assets/img/work3.png";
-import WorkImage4 from "../../assets/img/work4.png";
+import WorkImage1 from "../../assets/img/work1tech.png";
+import WorkImage2 from "../../assets/img/work2tech.png";
+import WorkImage3 from "../../assets/img/work3tech.png";
+import WorkImage4 from "../../assets/img/work4tech.png";
 import Logo from "../../assets/img/logo.png";
 import { ScaleLoader } from "react-spinners";
 class Work extends Component {
@@ -29,7 +29,6 @@ class Work extends Component {
     )
   };
   componentDidMount() {
-    document.querySelector("canvas").classList.add("canvas__display--none");
     setTimeout(() => {
       this.setState({
         content: (
@@ -37,7 +36,8 @@ class Work extends Component {
             style={{
               width: "100%",
               height: "100%",
-              background: "#222"
+              background: "#222",
+              zIndex: "1"
             }}
           >
             <Container
@@ -103,9 +103,6 @@ class Work extends Component {
     }, 2900);
   }
 
-  componentWillUnmount() {
-    document.querySelector("canvas").classList.remove("canvas__display--none");
-  }
   render() {
     return this.state.content;
   }
