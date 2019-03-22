@@ -9,7 +9,7 @@ class Skills extends Component {
  
   state = {
     content: 
-    <div style={{background:"#000", width: '100vw', height: '100vh'}} className="animated slideInLeft d-flex align-items-center justify-content-center flex-column"><CardImg src={Logo} style={{maxWidth:'200px', animation:'changeColor', animationDuration: '5s', background: "#000"}}/><h6 className="mt-4 mb-4">Fresh out of the oven...</h6><ScaleLoader size={20} color="#08fdd8"/></div>
+    <div style={{background:"#000", width: '100vw', height: '100vh'}} className="animated slideInLeft d-flex align-items-center justify-content-center flex-column"><CardImg src={Logo} style={{maxWidth:'200px', animation:'changeColor', animationDuration: '5s', background: "#000"}}/><h6 className="mt-4 mb-4">Fresh out the oven...</h6><ScaleLoader size={20} color="#08fdd8"/></div>
     
     
   }
@@ -18,7 +18,7 @@ class Skills extends Component {
     setTimeout(() => this.setState({
       content: <Container
       className="d-flex"
-        style={{ height: "100%", width: "100%", flex: '1'}}
+        style={{ height: "100%", width: "100%", flex: '1', overflow:'hidden'}}
       >
         <Row className="mt-4">
           <Col className="mb-4" xs="12">
@@ -42,7 +42,7 @@ class Skills extends Component {
         </Col>
       
           <Col xs="12">
-           <Container className="animated jello" style={{ background:"rgba(0, 0, 0, 0.1)", padding: "50px"}}>
+           <Container className="animated fadeInUp fast" style={{ background:"rgba(0, 0, 0, 0.1)", padding: "50px"}}>
             <Table borderless responsive>
               <thead>
                 <tr>

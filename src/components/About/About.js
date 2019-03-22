@@ -9,7 +9,7 @@ class About extends Component {
   
   state = {
     content: 
-    <div style={{background: "#000", width: '100vw', height: '100vh'}} className="animated slideInLeft d-flex align-items-center justify-content-center flex-column"><CardImg src={Logo} style={{maxWidth:'200px', animation:'changeColor', animationDuration: '5s', background: "#000"}}/><h6 className="mt-4 mb-4">Learning about me? Tread carefully.</h6><ScaleLoader size={20} color="#08fdd8"/></div>
+    <div style={{background: "#000", width: '100vw', height: '100vh'}} className="animated slideInLeft d-flex align-items-center justify-content-center flex-column"><CardImg src={Logo} style={{maxWidth:'200px', animation:'changeColor', animationDuration: '5s', background: "#000"}}/><h6 className="mt-4 mb-4">Wanna know more? Tread carefully.</h6><ScaleLoader size={20} color="#08fdd8"/></div>
     
     
     

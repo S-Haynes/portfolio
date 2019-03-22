@@ -20,7 +20,6 @@ body {
   font-family: Questrial, sans-serif;
   width: 100%;
   height: 100%;
-  
 }
 
 .App {
@@ -30,7 +29,7 @@ body {
   display: flex;
   flex: 1;
   align-items: center;
-
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -40,11 +39,24 @@ body {
   color: #61dafb;
 }
 
+.canvas__display--none {
+  display: none;
+}
+
+.formInput,
+.formInput:focus,
+.formInput:active:focus,
+.formInput.active:focus,
+.formInput.focus,
+.formInput:active.focus,
+.formInput.active.focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
 #root {
   width: 100% !important;
   height: 100% !important;
 }
-
 
 @keyframes App-logo-spin {
   from {
@@ -58,25 +70,24 @@ body {
 @keyframes changeColor {
   from {
     opacity: 0.1;
-    filter: grayscale(100)
+    filter: grayscale(100);
   }
   to {
     opacity: 1;
-    filter: grayscale(0)
+    filter: grayscale(0);
   }
 }
 
 @keyframes changeRoute {
   0% {
-    transform: translateX(-100%)
+    transform: translateX(-100%);
   }
 
- 50% {
-    transform: translateX(0%)
+  50% {
+    transform: translateX(0%);
   }
 
   100% {
-    transform: translateX(100%)
+    transform: translateX(100%);
   }
 }
-
