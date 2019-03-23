@@ -2,7 +2,7 @@
   "name": "portfolio_v2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://s-haynes.github.io/portfolio_v2/",
+  "homepage": "https://s-haynes.github.io/portfolio/",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "prop-types": "^15.7.2",
