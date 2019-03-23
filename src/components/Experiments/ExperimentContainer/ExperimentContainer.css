@@ -1,0 +1,33 @@
+.experiment {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 65vw;
+  max-height: 800px;
+  height: 200px;
+  width: 100vw;
+  padding: 0;
+  margin-left: -50px;
+}
+
+@media (max-width: 1600px) {
+  .experiment {
+    max-width: 90vw;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .experiment {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    height: 500vh;
+    flex-direction: column;
+  }
+}

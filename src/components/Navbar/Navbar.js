@@ -1,37 +1,33 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { CardImg } from "reactstrap";
 import MiniLogo from "../../assets/img/minilogo.png";
 import "./Navbar.css";
 class Navbar extends Component {
-
   state = {
     home: false,
     about: false,
     skills: false,
     work: false,
-    contact: false
-  }
-  
-  onNavClick = (e) => {
+    contact: false,
+    experiments: false
+  };
 
-  let updatedState = {...this.state}
+  onNavClick = e => {
+    let updatedState = { ...this.state };
 
-  for(let key in updatedState){
-    updatedState[key] = false
-  }
+    for (let key in updatedState) {
+      updatedState[key] = false;
+    }
 
-  this.setState(prevState => updatedState)
+    this.setState(prevState => updatedState);
 
-  const attr = e.target.getAttribute('customattribute')
+    const attr = e.target.getAttribute("customattribute");
 
-  this.setState(prevState => ({[attr]: !prevState[attr]}))
+    this.setState(prevState => ({ [attr]: !prevState[attr] }));
+  };
 
-}
-
-  
-  render(){
-
+  render() {
     return (
       <nav
         style={{
@@ -59,19 +55,52 @@ class Navbar extends Component {
           className="d-flex flex-column justify-content-center align-items-center"
         >
           <Link name="home" className="mt-4" to="/">
-            <i onClick={this.onNavClick} style={this.state.home ? {color: '#08fdd8'} : null}  customattribute="home" className="fas fa-home" />
+            <i
+              onClick={this.onNavClick}
+              style={this.state.home ? { color: "#08fdd8" } : null}
+              customattribute="home"
+              className="fas fa-home"
+            />
           </Link>
           <Link name="about" className="mt-4" to="/about">
-            <i onClick={this.onNavClick} style={this.state.about ? {color: '#08fdd8'} : null} customattribute="about" className="far fa-user" />
+            <i
+              onClick={this.onNavClick}
+              style={this.state.about ? { color: "#08fdd8" } : null}
+              customattribute="about"
+              className="far fa-user"
+            />
           </Link>
           <Link name="skills" className="mt-4" to="/skills">
-            <i onClick={this.onNavClick} style={this.state.skills ? {color: '#08fdd8'} : null}  customattribute="skills" className="fas fa-cogs" />
+            <i
+              onClick={this.onNavClick}
+              style={this.state.skills ? { color: "#08fdd8" } : null}
+              customattribute="skills"
+              className="fas fa-cogs"
+            />
           </Link>
-          <Link  className="mt-4" to="/work">
-            <i onClick={this.onNavClick} style={this.state.work ? {color: '#08fdd8'} : null} customattribute="work" className="far fa-eye" />
+          <Link className="mt-4" to="/work">
+            <i
+              onClick={this.onNavClick}
+              style={this.state.work ? { color: "#08fdd8" } : null}
+              customattribute="work"
+              className="far fa-eye"
+            />
+          </Link>
+          <Link className="mt-4" to="/experiments">
+            <i
+              onClick={this.onNavClick}
+              style={this.state.experiments ? { color: "#08fdd8" } : null}
+              customattribute="experiments"
+              className="fas fa-flask"
+            />
           </Link>
           <Link className="mt-4" to="/contact">
-            <i onClick={this.onNavClick} style={this.state.contact ? {color: '#08fdd8'} : null} customattribute="contact" className="far fa-envelope" />
+            <i
+              onClick={this.onNavClick}
+              style={this.state.contact ? { color: "#08fdd8" } : null}
+              customattribute="contact"
+              className="far fa-envelope"
+            />
           </Link>
         </div>
         <div
@@ -90,8 +119,7 @@ class Navbar extends Component {
         </div>
       </nav>
     );
-  };
   }
-  
+}
 
 export default Navbar;

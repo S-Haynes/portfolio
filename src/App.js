@@ -7,6 +7,7 @@ import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import Work from "./components/Work/Work";
 import Particles from "react-particles-js";
+import Experiments from "./components/Experiments/Experiments";
 
 import "./App.css";
 
@@ -89,6 +90,7 @@ class App extends Component {
               <Route path="/about" exact component={About} />
               <Route path="/skills" exact component={Skills} />
               <Route path="/work" exact component={Work} />
+              <Route path="/experiments" exact component={Experiments} />
             </Switch>
           </div>
         </div>

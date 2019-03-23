@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Spinner, CardImg } from "reactstrap";
+import { Container, Row, Col, CardImg } from "reactstrap";
 import WorkItem from "./WorkItem/WorkItem";
 import WorkImage1 from "../../assets/img/work1tech.png";
 import WorkImage2 from "../../assets/img/work2tech.png";

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Table, CardImg, Spinner } from "reactstrap";
+import { Container, Row, Col, Table, CardImg } from "reactstrap";
 import ReactLogo from "../../assets/img/react-logo.svg";
 import "./Skills.css";
 import Logo from "../../assets/img/logo.png";
