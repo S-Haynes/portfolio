@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Button from "../Button/Button";
 import Logo from "../../assets/img/logo.png";
 import { ScaleLoader } from "react-spinners";
+import "./Home.css";
 
 class Home extends Component {
   state = {
@@ -37,7 +38,11 @@ class Home extends Component {
                 className="d-flex justify-content-between align-items-center"
                 style={{ width: "100%", minHeight: "100%" }}
               >
-                <Col className="animated bounceInDown" xs="8">
+                <Col
+                  className="animated bounceInDown title__info"
+                  sm="12"
+                  md="8"
+                >
                   <h1>Shaq Haynes</h1>
                   <h1>
                     Front-end <span style={{ color: "#444" }}>/</span> UI
@@ -52,14 +57,9 @@ class Home extends Component {
                     </Link>
                   </div>
                 </Col>
-                <Col xs="4">
+                <Col className="brandlogo" sm="12" md="4">
                   <CardImg
-                    className="animated flipInY delay-1s"
-                    style={{
-                      maxWidth: "400px",
-                      maxHeight: "500px",
-                      animationDuration: "3s"
-                    }}
+                    className="animated flipInY delay-1s brandlogo__img"
                     src={BrandLogo}
                     alt="logo"
                   />

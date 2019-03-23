@@ -40,10 +40,16 @@ class Contact extends Component {
             <Container>
               <Form>
                 <Row>
-                  <Col sm="6">
+                  <Col sm="12" md="8">
                     <Row>
                       <Col xs="12">
-                        <h1 style={{ fontSize: "72px", color: "#08fdd8" }}>
+                        <h1
+                          style={{
+                            fontSize: "72px",
+                            color: "#08fdd8",
+                            opacity: "0.5"
+                          }}
+                        >
                           Contact Me
                         </h1>
                       </Col>
@@ -107,7 +113,8 @@ class Contact extends Component {
                               color: "white",
                               background: "#111",
                               border: "none",
-                              borderBottom: "1px solid #08fdd8"
+                              borderBottom: "1px solid #08fdd8",
+                              height: "350px"
                             }}
                             type="textarea"
                             name="message"

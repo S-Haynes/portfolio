@@ -1,0 +1,31 @@
+.brandlogo__img {
+  max-width: 400px;
+  max-height: 500px;
+  animation-duration: 3s;
+}
+
+@media (max-width: 767px) {
+  .brandlogo {
+    position: absolute !important;
+    margin: auto;
+    left: 25%;
+    top: 25%;
+    z-index: 0;
+  }
+
+  .brandlogo__img {
+    position: relative;
+    left: -10%;
+    width: 50%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 500px;
+    animation-duration: 3s;
+    opacity: 0.4;
+    z-index: 1;
+  }
+
+  .title__info {
+    z-index: 2;
+  }
+}

@@ -4,6 +4,7 @@ import ReactLogo from "../../assets/img/react-logo.svg";
 import "./Skills.css";
 import Logo from "../../assets/img/logo.png";
 import { ScaleLoader } from "react-spinners";
+import "./Skills.css";
 class Skills extends Component {
   state = {
     content: (
@@ -42,13 +43,13 @@ class Skills extends Component {
               <Row className="mt-4">
                 <Col className="mb-4" xs="12">
                   <h1
-                    className="animated fadeInDown"
+                    className="animated fadeInDown skills__title"
                     style={{ fontSize: "72px", color: "#08fdd8" }}
                   >
                     Skills & Experience
                   </h1>
                 </Col>
-                <Col className="mb-4" xs="12" sm="6">
+                <Col className="mb-4" sm="12" md="6">
                   <p>
                     My primary area of expertise is in front-end development
                     (client side of the web).

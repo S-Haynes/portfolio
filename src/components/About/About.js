@@ -21,7 +21,7 @@ class About extends Component {
             background: "#000"
           }}
         />
-        <h6 className="mt-4 mb-4">Wanna know more? Tread carefully.</h6>
+        <h6 className="mt-4 mb-4">You're pretty awesome yourself.</h6>
         <ScaleLoader size={20} color="#08fdd8" />
       </div>
     )
