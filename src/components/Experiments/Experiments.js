@@ -12,8 +12,12 @@ import Image7 from "../../assets/img/experiment7.png";
 import Image8 from "../../assets/img/experiment8.png";
 import Image9 from "../../assets/img/experiment9.png";
 import Image10 from "../../assets/img/experiment10.png";
+import Flask from "../../assets/img/flask.png";
+import Bubble from "../../assets/img/bubble.png";
 import ExperimentItem from "./ExperimentItem/ExperimentItem";
 import ExperimentContainer from "./ExperimentContainer/ExperimentContainer";
+import Particles from "react-particles-js";
+import "./Experiments.css";
 
 class Experiments extends Component {
   state = {
@@ -118,6 +122,87 @@ class Experiments extends Component {
                   </ExperimentContainer>
                 </Col>
               </Row>
+              <div
+                style={{
+                  zIndex: "1000",
+                  position: "fixed",
+                  bottom: "0",
+                  right: "100px",
+                  maxWidth: "300px",
+                  maxheight: "300px",
+                  transform: "rotate(-10deg)"
+                }}
+              >
+                <Particles
+                  className="bubble__canvas"
+                  params={{
+                    interactivity: {
+                      events: {
+                        modes: {
+                          bubble: {
+                            size: 1
+                          }
+                        },
+                        onhover: {
+                          enable: true,
+                          mode: "bubble"
+                        }
+                      }
+                    },
+                    particles: {
+                      line_linked: {
+                        enable: false
+                      },
+                      shape: {
+                        type: "image",
+                        image: {
+                          src: Bubble,
+                          width: 100,
+                          height: 100
+                        }
+                      },
+                      color: {
+                        value: "#08fdd8"
+                      },
+                      number: {
+                        value: 100,
+                        density: {
+                          enable: true,
+                          value_area: 800
+                        }
+                      },
+                      size: {
+                        value: 20,
+                        random: false,
+                        anim: {
+                          enable: false
+                        }
+                      },
+
+                      opacity: {
+                        value: 0.5,
+                        random: true,
+                        anim: {
+                          enable: true,
+                          speed: 0.1,
+                          opacity_min: 0.1,
+                          sync: false
+                        }
+                      },
+                      move: {
+                        enable: true,
+                        direction: "top",
+                        speed: 1,
+                        random: false,
+                        straight: false,
+                        bounce: false,
+                        out_mode: "out"
+                      }
+                    }
+                  }}
+                />
+                <CardImg className="img__flask" src={Flask} />
+              </div>
             </Container>
           )
         }),
