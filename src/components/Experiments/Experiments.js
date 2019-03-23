@@ -74,20 +74,47 @@ class Experiments extends Component {
                   xs="12"
                 >
                   <ExperimentContainer>
-                    <ExperimentItem img={Image1} />
-                    <ExperimentItem img={Image2} />
-                    <ExperimentItem img={Image3} />
-                    <ExperimentItem img={Image4} />
+                    <ExperimentItem link="https://pvn.surge.sh" img={Image1} />
+                    <ExperimentItem
+                      link="https://codepen.io/s-haynes/full/rvLEwa"
+                      img={Image2}
+                    />
+                    <ExperimentItem
+                      link="https://codepen.io/s-haynes/full/RJopLN"
+                      img={Image3}
+                    />
+                    <ExperimentItem
+                      link="https://codepen.io/s-haynes/full/BxowOM"
+                      img={Image4}
+                    />
                   </ExperimentContainer>
                   <ExperimentContainer>
-                    <ExperimentItem img={Image5} />
-                    <ExperimentItem img={Image6} />
-                    <ExperimentItem img={Image7} />
-                    <ExperimentItem img={Image8} />
+                    <ExperimentItem
+                      link="https://codepen.io/s-haynes/full/XqKvNg"
+                      img={Image5}
+                    />
+                    <ExperimentItem
+                      link="https://codepen.io/s-haynes/full/PezXLP"
+                      img={Image6}
+                    />
+                    <ExperimentItem
+                      link="https://codepen.io/s-haynes/full/odzKPM"
+                      img={Image7}
+                    />
+                    <ExperimentItem
+                      link="https://codepen.io/s-haynes/full/yjWVdM"
+                      img={Image8}
+                    />
                   </ExperimentContainer>
                   <ExperimentContainer>
-                    <ExperimentItem img={Image9} />
-                    <ExperimentItem img={Image10} />
+                    <ExperimentItem
+                      link="https://codepen.io/s-haynes/full/aMPQpz"
+                      img={Image9}
+                    />
+                    <ExperimentItem
+                      link="https://codepen.io/s-haynes/full/PLJGKP"
+                      img={Image10}
+                    />
                   </ExperimentContainer>
                 </Col>
               </Row>
