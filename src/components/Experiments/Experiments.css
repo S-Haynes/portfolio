@@ -1,28 +1,15 @@
 .bubble__canvas canvas {
   position: relative;
   left: 0;
-  width: 100% !important;
+  width: 50vw !important;
   height: 100vh !important;
   overflow: visible !important;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.8),
-    rgba(7, 252, 215, 0.3)
-  );
-  border: 10px solid black;
-  border-bottom-left-radius: 35%;
-  border-bottom-right-radius: 35%;
-  border-bottom: none;
-  box-sizing: border-box;
-  margin-bottom: -10px;
+  /* margin-bottom: -10px; */
+  opacity: 0.3;
 }
 
 @media (max-width: 1000px) {
   .bubble__canvas {
-    display: none;
-  }
-
-  .img__flask {
     display: none;
   }
 }

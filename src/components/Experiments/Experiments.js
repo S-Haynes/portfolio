@@ -73,7 +73,8 @@ class Experiments extends Component {
                   style={{
                     marginTop: "150px",
                     height: "100%",
-                    width: "100%"
+                    width: "100%",
+                    zIndex: "2"
                   }}
                   xs="12"
                 >
@@ -124,13 +125,13 @@ class Experiments extends Component {
               </Row>
               <div
                 style={{
-                  zIndex: "1000",
-                  position: "fixed",
-                  bottom: "0",
-                  right: "100px",
-                  maxWidth: "300px",
+                  zIndex: "1",
+                  position: "absolute",
+                  bottom: "25%",
+                  left: "10%",
+                  maxWidth: "800px",
                   maxheight: "300px",
-                  transform: "rotate(-10deg)"
+                  transform: "rotate(-30deg)"
                 }}
               >
                 <Particles
@@ -144,7 +145,7 @@ class Experiments extends Component {
                           }
                         },
                         onhover: {
-                          enable: true,
+                          enable: false,
                           mode: "bubble"
                         }
                       }
@@ -165,7 +166,7 @@ class Experiments extends Component {
                         value: "#08fdd8"
                       },
                       number: {
-                        value: 100,
+                        value: 20,
                         density: {
                           enable: true,
                           value_area: 800
@@ -192,16 +193,15 @@ class Experiments extends Component {
                       move: {
                         enable: true,
                         direction: "top",
-                        speed: 1,
+                        speed: 10,
                         random: false,
                         straight: false,
-                        bounce: false,
+                        bounce: true,
                         out_mode: "out"
                       }
                     }
                   }}
                 />
-                <CardImg className="img__flask" src={Flask} />
               </div>
             </Container>
           )
