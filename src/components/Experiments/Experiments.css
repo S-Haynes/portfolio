@@ -7,7 +7,11 @@
   /* margin-bottom: -10px; */
   opacity: 0.3;
 }
-
+@media (max-width: 1500px) {
+  .bubble__canvas canvas {
+    left: -100px;
+  }
+}
 @media (max-width: 1000px) {
   .bubble__canvas {
     display: none;

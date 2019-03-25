@@ -19,6 +19,12 @@
   }
 }
 
+@media (max-width: 1350px) {
+  .experiment {
+    margin-left: 100px;
+  }
+}
+
 @media (max-width: 1000px) {
   .experiment {
     position: relative;

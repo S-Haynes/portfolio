@@ -104,8 +104,8 @@ class Navbar extends Component {
           </Link>
         </div>
         <div
-          style={{ width: "100%", height: "10%" }}
-          className="d-flex flex-column justify-content-end align-items-center"
+          style={{ width: "100%" }}
+          className="d-flex flex-column justify-content-end align-items-center nav-end-links"
         >
           <a className="mt-4" href="/">
             <i className="fab fa-linkedin-in" />

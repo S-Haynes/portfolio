@@ -15,7 +15,7 @@
 
   .brandlogo__img {
     position: relative;
-    left: -10%;
+    left: -50px;
     width: 50%;
     height: 100%;
     max-width: 400px;
@@ -23,6 +23,7 @@
     animation-duration: 3s;
     opacity: 0.4;
     z-index: 1;
+    margin-left: 10px;
   }
 
   .title__info {

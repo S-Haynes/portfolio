@@ -12,3 +12,14 @@ a i:active {
   color: #08fdd8;
   opacity: 1;
 }
+
+@media (max-width: 800px) {
+  nav .align-items-center {
+    justify-content: start !important;
+  }
+
+  div.nav-end-links {
+    justify-self: start;
+    height: 100%;
+  }
+}
