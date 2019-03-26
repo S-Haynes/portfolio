@@ -5,28 +5,11 @@ import WorkImage1 from "../../assets/img/work1tech.png";
 import WorkImage2 from "../../assets/img/work2tech.png";
 import WorkImage3 from "../../assets/img/work3tech.png";
 import WorkImage4 from "../../assets/img/work4tech.png";
-import Logo from "../../assets/img/logo.png";
-import { ScaleLoader } from "react-spinners";
+import Loading from "../Loading/Loading";
+
 class Work extends Component {
   state = {
-    content: (
-      <div
-        style={{ background: "#000", width: "100vw", height: "100vh" }}
-        className="animated slideInLeft d-flex align-items-center justify-content-center flex-column"
-      >
-        <CardImg
-          src={Logo}
-          style={{
-            maxWidth: "200px",
-            animation: "changeColor",
-            animationDuration: "5s",
-            background: "#000"
-          }}
-        />
-        <h6 className="mt-4 mb-4">The fun stuff lives here.</h6>
-        <ScaleLoader size={20} color="#08fdd8" />
-      </div>
-    )
+    content: <Loading text="The fun stuff lives here." />
   };
   componentDidMount() {
     setTimeout(() => {

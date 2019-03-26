@@ -3,31 +3,14 @@ import { Container, Row, Col, CardImg } from "reactstrap";
 import BrandLogo from "../../assets/img/logo.png";
 import { Link } from "react-router-dom";
 import Button from "../Button/Button";
-import Logo from "../../assets/img/logo.png";
-import { ScaleLoader } from "react-spinners";
+import Loading from "../Loading/Loading";
 import "./Home.css";
 
 class Home extends Component {
   state = {
-    content: (
-      <div
-        style={{ background: "#000", width: "100vw", height: "100vh" }}
-        className="animated slideInLeft d-flex align-items-center justify-content-center flex-column"
-      >
-        <CardImg
-          src={Logo}
-          style={{
-            maxWidth: "200px",
-            animation: "changeColor",
-            animationDuration: "5s",
-            background: "#000"
-          }}
-        />
-        <h6 className="mt-4 mb-4">Loading something special...</h6>
-        <ScaleLoader size={20} color="#08fdd8" />
-      </div>
-    )
+    content: <Loading text="Loading something special..." />
   };
+
   componentDidMount() {
     setTimeout(
       () =>
