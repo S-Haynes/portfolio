@@ -13,12 +13,17 @@ a i:active {
   opacity: 1;
 }
 
+.justify-self-end {
+  justify-self: end !important;
+  flex: 1;
+}
+
 @media (max-width: 800px) {
   nav .align-items-center {
     justify-content: start !important;
   }
 
-  div.nav-end-links {
-    justify-self: start;
+  nav i {
+    font-size: 15px;
   }
 }

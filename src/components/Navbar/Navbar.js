@@ -51,10 +51,10 @@ class Navbar extends Component {
           </Link>
         </div>
         <div
-          style={{ width: "100%", height: "100%" }}
+          style={{ width: "100%", height: "80%" }}
           className="d-flex flex-column justify-content-center align-items-center"
         >
-          <Link name="home" className="mt-4" to="/">
+          <Link name="home" className="mt-auto" to="/">
             <i
               onClick={this.onNavClick}
               style={this.state.home ? { color: "#08fdd8" } : null}
@@ -102,18 +102,14 @@ class Navbar extends Component {
               className="far fa-envelope"
             />
           </Link>
-        </div>
-        <div
-          style={{ width: "100%" }}
-          className="d-flex flex-column justify-content-end align-items-center nav-end-links"
-        >
-          <a className="mt-4" href="/">
+
+          <a className="mt-auto" href="/">
             <i className="fab fa-linkedin-in" />
           </a>
           <a className="mt-4" href="https://www.codepen.io/s-haynes">
             <i className="fab fa-codepen" />
           </a>
-          <a className="mt-4 mb-4" href="https://www.github.com/s-haynes">
+          <a className="mt-4" href="https://www.github.com/s-haynes">
             <i className="fab fa-github" />
           </a>
         </div>
