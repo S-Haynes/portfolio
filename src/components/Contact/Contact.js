@@ -30,7 +30,7 @@ class Contact extends Component {
                           style={{
                             fontSize: "72px",
                             color: "#08fdd8",
-                            opacity: "0.5"
+                            opacity: "0.9"
                           }}
                         >
                           Contact Me
