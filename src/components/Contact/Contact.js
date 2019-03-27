@@ -10,6 +10,7 @@ import {
 } from "reactstrap";
 import Button from "../Button/Button";
 import Loading from "../Loading/Loading";
+import axios from "axios";
 
 class Contact extends Component {
   state = {
@@ -18,7 +19,8 @@ class Contact extends Component {
     subject: "",
     message: "",
     error: null,
-    mailSent: false
+    mailSent: false,
+    btn: "SEND"
   };
 
   inputChangeHandler = e => {
@@ -35,7 +37,20 @@ class Contact extends Component {
       message
     };
 
-    console.log(emailData);
+    axios
+      .post("https://accept-mail.herokuapp.com/send", emailData)
+      .then(res =>
+        this.setState({
+          btn: "EMAIL RECIEVED!",
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+          error: null,
+          mailSent: false
+        })
+      )
+      .catch(err => console.log("failed"));
   };
 
   render() {
@@ -70,6 +85,7 @@ class Contact extends Component {
                       name="name"
                       id="name"
                       placeholder="name"
+                      required
                       value={this.state.name}
                       onChange={this.inputChangeHandler}
                     />
@@ -89,6 +105,7 @@ class Contact extends Component {
                       name="email"
                       id="email"
                       placeholder="email"
+                      required
                       value={this.state.email}
                       onChange={this.inputChangeHandler}
                     />
@@ -137,7 +154,7 @@ class Contact extends Component {
               </Row>
             </Col>
             <Col sm="6">
-              <Button text="SEND" />
+              <Button text={this.state.btn} />
             </Col>
           </Row>
         </Form>
