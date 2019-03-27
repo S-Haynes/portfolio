@@ -174,7 +174,7 @@ class Experiments extends Component {
                       },
                       move: {
                         enable: true,
-                        direction: "top",
+                        direction: "top-left",
                         speed: 10,
                         random: false,
                         straight: false,

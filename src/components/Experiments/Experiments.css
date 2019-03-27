@@ -1,11 +1,12 @@
 .bubble__canvas canvas {
   position: relative;
   left: 0;
-  width: 50vw !important;
+  width: 100vw !important;
   height: 100vh !important;
   overflow: visible !important;
   /* margin-bottom: -10px; */
   opacity: 0.3;
+  clip-path: polygon(100% 0, 100% 48%, 49% 100%, 0 46%, 0 0);
 }
 @media (max-width: 1500px) {
   .bubble__canvas canvas {
