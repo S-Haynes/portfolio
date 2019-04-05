@@ -1,15 +1,6 @@
 import React, { Component } from "react";
-import {
-  CardImg,
-  Container,
-  Form,
-  FormGroup,
-  Input,
-  Col,
-  Row
-} from "reactstrap";
+import { Container, Form, FormGroup, Input, Col, Row } from "reactstrap";
 import Button from "../Button/Button";
-import Loading from "../Loading/Loading";
 import axios from "axios";
 
 class Contact extends Component {
