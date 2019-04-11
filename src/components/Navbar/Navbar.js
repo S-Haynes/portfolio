@@ -103,10 +103,7 @@ class Navbar extends Component {
             />
           </Link>
 
-          <a
-            className="mt-auto"
-            href="https://www.linkedin.com/in/shaquille-haynes-76754a184"
-          >
+          <a className="mt-auto" href="https://www.linkedin.com/in/s-haynes">
             <i className="fab fa-linkedin-in" />
           </a>
           <a className="mt-4" href="https://www.codepen.io/s-haynes">
