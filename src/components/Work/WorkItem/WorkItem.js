@@ -19,7 +19,7 @@ const WorkItem = props => {
           <p className="mt-4" style={{ fontSize: "20px" }}>
             {props.info}
           </p>
-          <a href={props.link}>
+          <a href={props.link} target="_blank" rel="noopener noreferrer">
             <Button text="VIEW" />
           </a>
         </Col>

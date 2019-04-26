@@ -5,6 +5,7 @@ import WorkImage1 from "../../assets/img/work1tech.png";
 import WorkImage2 from "../../assets/img/work2tech.png";
 import WorkImage3 from "../../assets/img/work3tech.png";
 import WorkImage4 from "../../assets/img/work4tech.png";
+import WorkImage5 from "../../assets/img/work5tech.png";
 import Loading from "../Loading/Loading";
 
 class Work extends Component {
@@ -38,6 +39,16 @@ class Work extends Component {
                 </Col>
                 <div className="animated fadeInLeft">
                   <WorkItem
+                    title="The World Headlines"
+                    year="2019"
+                    tech="React / Bootstrap / RESTful API's"
+                    info="React application gathering data from various API's (Newsapi and YouTube API) and displaying news content from around the globe."
+                    link="https://theworldheadlines.netlify.com"
+                    logo={WorkImage5}
+                  />
+                </div>
+                <div className="animated fadeInRight">
+                  <WorkItem
                     title="Movie Junkie"
                     year="2018"
                     tech="React / Express / MongoDB / NodeJS"
@@ -48,7 +59,7 @@ class Work extends Component {
                     logo={WorkImage1}
                   />
                 </div>
-                <div className="animated fadeInRight">
+                <div className="animated fadeInLeft">
                   <WorkItem
                     title="Big Boys Group"
                     year="2018"
@@ -58,7 +69,7 @@ class Work extends Component {
                     logo={WorkImage2}
                   />
                 </div>
-                <div className="animated fadeInLeft delay-1s">
+                <div className="animated fadeInRight delay-1s">
                   <WorkItem
                     title="Cart Secure"
                     year="2018"
@@ -68,7 +79,8 @@ class Work extends Component {
                     logo={WorkImage3}
                   />
                 </div>
-                <div className="animated fadeInRight delay-1s">
+
+                <div className="animated fadeInLeft delay-1s">
                   <WorkItem
                     title="My Twitch"
                     year="2018"
